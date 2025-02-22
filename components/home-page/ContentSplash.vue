@@ -10,7 +10,7 @@
       <img
         :src="image"
         alt="Splash Image"
-        class="w-full translate-y-[120px] scale-[1.4] h-full z-[500] object-top object-scale-down"
+        class="w-full translate-y-[120px] scale-[1.4] h-full z-500 object-top object-scale-down"
       />
     </div>
     <div class="flex flex-col justify-center w-1/2">
@@ -22,7 +22,7 @@
         </p>
       </div>
       <h2 class="text-5xl font-bold mb-8">{{ title }}</h2>
-      <div class="text-gray-500 flex flex-col gap-4">
+      <div class="text-base-500 flex flex-col gap-4">
         <slot />
       </div>
     </div>

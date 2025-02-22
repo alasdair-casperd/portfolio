@@ -9,7 +9,7 @@
     </p>
 
     <h1
-      class="mt-8 bg-gradient-to-br from-base-100/90 via-sky-50 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
+      class="mt-8 bg-linear-to-br from-base-100/90 via-sky-50 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
     >
       Lorem Ipsum Dolor Sit <br />Amet Consectetur Polarsi
     </h1>
