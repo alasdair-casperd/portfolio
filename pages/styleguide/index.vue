@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import GradientDivider from "~/components/home-page/GradientDivider.vue";
+import PageCard from "~/components/home-page/PageCard.vue";
+import { pages } from "~/data/page.data";
 </script>
 
 <template>
@@ -59,6 +61,14 @@ import GradientDivider from "~/components/home-page/GradientDivider.vue";
           ut voluptas qui?
         </p>
       </ContentSplash>
+    </StyleguideSection>
+
+    <StyleguideSection title="Home – Page Cards">
+      <div class="p-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <PageCard :page="pages[0]" />
+        <PageCard :page="pages[1]" />
+        <PageCard :page="pages[2]" />
+      </div>
     </StyleguideSection>
   </div>
 </template>

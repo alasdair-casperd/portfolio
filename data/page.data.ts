@@ -30,7 +30,7 @@ export const pages: Page[] = [
   {
     name: "WordOwl",
     caption: "Lorem ipsum dolor.",
-    path: "casperd-life-test",
+    path: "apps/wordowl",
     image: "page-previews/wordowl-page-preview.png",
     tags: [tags.swift, tags.swift_ui],
     category: categories.ios_development,
@@ -38,7 +38,7 @@ export const pages: Page[] = [
   {
     name: "Domingo",
     caption: "Lorem ipsum dolor.",
-    path: "casperd-life-test",
+    path: "apps/domingo",
     image: "page-previews/domingo-page-preview.png",
     tags: [tags.swift, tags.swift_ui],
     category: categories.ios_development,
