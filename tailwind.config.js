@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+
+import colors from "tailwindcss/colors";
+
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        base: colors.zinc,
+        accent: colors.violet,
+      },
+    },
   },
   plugins: [],
   content: [
@@ -13,5 +21,4 @@ export default {
     "./app.vue",
     "./error.vue",
   ],
-}
-
+};
