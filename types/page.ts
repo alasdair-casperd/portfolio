@@ -5,7 +5,7 @@ export type Page = {
   name: string;
   caption: string;
   path: string;
-  image: string;
+  images: Record<string, string>;
   tags: Tag[];
   category: Category;
 };

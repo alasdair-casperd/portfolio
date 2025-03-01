@@ -4,7 +4,7 @@
       class="h-64 w-full rounded-lg mb-4 overflow-hidden bg-base-900 border-base-700 border"
     >
       <img
-        :src="page.image"
+        :src="page.images.card"
         :alt="page.name"
         class="object-cover hover:scale-[1.03] transition-transform duration-300 h-full w-full"
       />
@@ -15,7 +15,7 @@
         <!-- <div class="font-light text-base-500">{{ page.caption }}</div> -->
       </div>
       <div class="flex flex-wrap gap-4 mt-2 text-base-600">
-        <Tag v-for="tag in page.tags" :key="tag.name" :tag="tag" />
+        <SubtleTag v-for="tag in page.tags" :key="tag.name" :tag="tag" />
       </div>
     </div>
   </NuxtLink>
