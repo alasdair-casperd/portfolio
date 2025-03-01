@@ -3,7 +3,7 @@
     class="bg-black/70 border-b border-base-900 px-4 p-2 w-full sticky top-0 z-10000 backdrop-blur-lg text-white/80 flex flex-row justify-between items-center"
   >
     <div class="flex flex-row gap-3">
-      <div class="font-bold">Alasdair Casperd</div>
+      <NuxtLink to="/" class="font-bold">Alasdair Casperd</NuxtLink>
       <div class="text-base-500">Portfolio</div>
     </div>
     <div class="flex flex-row gap-3 items-center">
