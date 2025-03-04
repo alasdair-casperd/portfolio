@@ -4,7 +4,7 @@
       class="absolute z-50 h-full w-full flex flex-col justify-center items-center px-5"
     >
       <h1
-        class="mt-8 bg-linear-to-br from-base-100/90 via-sky-50 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
+        class="mt-8 bg-linear-to-br from-base-100/90 via-sky-50 to-white bg-clip-text text-center text-2xl text-4xl font-medium tracking-tight text-transparent md:text-6xl"
       >
         Lorem Ipsum Dolor Sit <br />Amet Consectetur Polarsi
       </h1>
@@ -15,7 +15,7 @@
         quo quis eius, fugiat blanditiis fuga! Ipsam, vel rerum.
       </p>
 
-      <div class="flex flex-row gap-5 mt-7">
+      <div class="flex flex-col sm:flex-row gap-5 mt-7">
         <Button
           text="Read More"
           variant="primary"
@@ -46,7 +46,7 @@
           background="transparent"
           :opacitySpeed="3"
           :options="() => ({})"
-          class="absolute inset-x-0 bottom-0 h-full w-full [mask-image:radial-gradient(50%_50%,white,transparent_85%)] z-30"
+          class="absolute inset-x-0 bottom-0 h-full w-full [mask-image:radial-gradient(50%_50%,white,transparent_100%)] z-30"
         /> </template
     ></LightRays>
   </div>

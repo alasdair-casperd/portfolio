@@ -3,7 +3,9 @@
     class="flex flex-col items-center gap-6 w-full bg-black p-12 text-sm border-t border-base-800"
   >
     <Icon name="icon-park-solid:diamond-two" class="text-2xl text-violet-400" />
-    <div class="flex flex-row justify-center gap-8">
+    <div
+      class="flex flex-col min-[350px]:flex-row justify-center gap-2 sm:gap-8 text-center"
+    >
       <FooterLink
         v-for="link in links"
         :key="link.text"

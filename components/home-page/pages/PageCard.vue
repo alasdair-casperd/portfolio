@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="page.path" class="group">
     <div
-      class="h-64 w-full rounded-lg mb-4 overflow-hidden bg-base-900 border-base-700 border"
+      class="aspect-16/9 w-full rounded-lg mb-4 overflow-hidden bg-base-900 border-base-700 border"
     >
       <img
         :src="page.images.card"

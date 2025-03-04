@@ -7,7 +7,9 @@
         :alt="image.caption"
         class="w-full object-contain"
       />
-      <div v-if="image.caption" class="text-sm">{{ image.caption }}</div>
+      <div v-if="image.caption" class="text-xs sm:text-sm text-center">
+        {{ image.caption }}
+      </div>
     </div>
   </div>
 </template>

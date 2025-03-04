@@ -4,12 +4,13 @@
   >
     <div class="flex flex-row gap-3">
       <NuxtLink to="/" class="font-bold">Alasdair Casperd</NuxtLink>
-      <div class="text-base-500">Portfolio</div>
+      <div class="text-base-500 hidden sm:flex">Portfolio</div>
     </div>
     <div class="flex flex-row gap-3 items-center">
-      <HeaderIcon icon_name="tabler:search" />
+      <HeaderIcon icon_name="tabler:search" class="hidden sm:flex" />
       <HeaderIcon
         icon_name="tabler:brand-github"
+        class="hidden sm:flex"
         href="https://github.com/alasdair-casperd"
       />
       <HeaderIcon
