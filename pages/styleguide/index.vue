@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import GradientDivider from "~/components/home-page/GradientDivider.vue";
-import PageCard from "~/components/home-page/PageCard.vue";
+import PageCard from "~/components/home-page/pages/PageCard.vue";
 import { pages } from "~/data/page.data";
 </script>
 

@@ -26,7 +26,7 @@
         </div>
         <div class="flex flex-row gap-4 items-center">
           <BadgeTag v-for="tag in page.tags" :tag="tag" />
-          <Icon name="mdi:chevron-right" class="text-white text-2xl" />
+          <Icon name="tabler:chevron-right" class="text-base-600 text-2xl" />
         </div>
       </div>
     </div>
