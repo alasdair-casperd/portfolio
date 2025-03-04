@@ -8,6 +8,13 @@ export const tags: Record<string, Tag> = {
     colour: "cyan",
   },
 
+  javascript: {
+    name: "JavaScript",
+    tag_text: "JavaScript",
+    icon: "tabler:brand-javascript",
+    colour: "cyan",
+  },
+
   swift: {
     name: "Swift",
     tag_text: "Swift",

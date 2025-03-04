@@ -4,15 +4,15 @@ import { tags } from "./tag.data";
 
 export const pages: Page[] = [
   {
-    name: "WordOwl",
-    caption: "Lorem ipsum dolor.",
-    path: "wordowl",
+    name: "Bookshelf",
+    caption: "Book tracking web app",
+    path: "bookshelf",
     images: {
-      card: "page-previews/wordowl-page-preview.png",
+      card: "page-previews/bookshelf-page-preview.png",
       list: "apps/wordowl/phones/tools-list-1.png",
       icon: "apps/wordowl/app-icon.png",
     },
-    tags: [tags.typescript, tags.vue, tags.nuxt],
+    tags: [tags.typescript, tags.vue, tags.tailwind, tags.nuxt],
     category: categories.web_development,
   },
   {
@@ -23,7 +23,7 @@ export const pages: Page[] = [
       card: "page-previews/casperd-life-test-page-preview.png",
       list: "page-previews/casperd-life-test-page-preview.png",
     },
-    tags: [tags.typescript, tags.react, tags.next],
+    tags: [tags.typescript, tags.react, tags.tailwind, tags.next],
     category: categories.web_development,
   },
   {
@@ -34,7 +34,7 @@ export const pages: Page[] = [
       card: "page-previews/the-illusionist-page-preview.png",
       list: "page-previews/the-illusionist-page-preview.png",
     },
-    tags: [tags.typescript, tags.react, tags.next],
+    tags: [tags.typescript, tags.react, tags.tailwind, tags.next],
     category: categories.web_development,
   },
   {
@@ -119,7 +119,17 @@ export const pages: Page[] = [
     tags: [tags.swift, tags.swift_ui],
     category: categories.ios_development,
   },
-
+  {
+    name: "Breakaway Languages",
+    caption: "Lorem ipsum dolor.",
+    path: "casperd-life-test",
+    images: {
+      card: "page-previews/breakaway-page-preview.png",
+      list: "page-previews/breakaway-page-preview.png",
+    },
+    tags: [tags.javascript, tags.react, tags.tailwind, tags.next],
+    category: categories.web_development,
+  },
   {
     name: "Bilingüe",
     caption: "Lorem ipsum dolor.",
