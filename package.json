@@ -16,6 +16,7 @@
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/slim": "^3.8.1",
     "@vueuse/motion": "^2.2.6",
+    "@wdns/vue-code-block": "^2.3.5",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
