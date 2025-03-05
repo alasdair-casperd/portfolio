@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-base-950 min-h-screen flex flex-col justify-between">
-    <div>
+  <div class="min-h-screen flex flex-col justify-between bg-base-950">
+    <div class="z-10">
       <Header />
       <slot />
     </div>

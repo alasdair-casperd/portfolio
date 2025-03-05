@@ -1,28 +1,29 @@
 <template>
-  <div class="relative h-[600px] overflow-hidden">
+  <div class="relative h-[600px]">
     <div
-      class="absolute z-50 h-full w-full flex flex-col justify-center items-center px-5"
+      class="absolute z-40 h-full w-full flex flex-col justify-center items-center px-5"
     >
       <h1
-        class="mt-8 bg-linear-to-br from-base-100/90 via-sky-50 to-white bg-clip-text text-center text-2xl text-4xl font-medium tracking-tight text-transparent md:text-6xl"
+        class="mt-8 bg-linear-to-br from-base-100/90 via-sky-100 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl leading-20"
       >
-        Lorem Ipsum Dolor Sit <br />Amet Consectetur Polarsi
+        Welcome to my Portfolio <br />
       </h1>
 
-      <p class="text-base-500 mt-6 text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sint
-        iure amet repellat vero quasi <br />a animi placeat fugit eos. Tenetur
-        quo quis eius, fugiat blanditiis fuga! Ipsam, vel rerum.
+      <p class="text-base-500 mt-6 text-center md:max-w-[600px]">
+        You've arrived at my software development portfolio. Below you'll find a
+        selection of my personal projects, including iOS apps, web development
+        and more.
       </p>
 
       <div class="flex flex-col sm:flex-row gap-5 mt-7">
         <Button
-          text="Read More"
+          @click="scrollToProjects"
+          text="View Projects"
           variant="primary"
           icon_name="tabler:chevron-right"
         />
         <Button
-          text="Contact"
+          text="Get in Touch"
           variant="secondary"
           icon_name="tabler:chevron-right"
         />
@@ -30,7 +31,7 @@
     </div>
     <LightRays
       streak-color="#f7ffff"
-      class="absolute top-0 -translate-y-[50px] bg-gradient-to-br from-zinc-800/50 to-black z-20"
+      class="top-0 -translate-y-[50px] bg-gradient-to-br from-zinc-800/50 to-black -z-10"
     >
       <template #particles>
         <Particles
@@ -51,3 +52,10 @@
     ></LightRays>
   </div>
 </template>
+
+<script setup lang="ts">
+const scrollToProjects = () => {
+  const projects = document.getElementById("projects");
+  projects?.scrollIntoView({ behavior: "smooth" });
+};
+</script>
