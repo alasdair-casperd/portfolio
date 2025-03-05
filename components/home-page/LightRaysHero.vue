@@ -9,21 +9,19 @@
         Welcome to my Portfolio <br />
       </h1>
 
-      <p class="text-base-500 mt-6 text-center md:max-w-[600px]">
-        You've arrived at my software development portfolio. Below you'll find a
-        selection of my personal projects, including iOS apps, web development
-        and more.
-      </p>
+      <p class="text-base-500 mt-6 text-center md:max-w-[600px]">{{ body }}</p>
 
       <div class="flex flex-col sm:flex-row gap-5 mt-7">
         <Button
-          @click="scrollToProjects"
-          text="View Projects"
+          @click="primary_action.action"
+          :text="primary_action.text"
           variant="primary"
           icon_name="tabler:chevron-right"
         />
         <Button
-          text="Get in Touch"
+          v-if="secondary_action"
+          @click="secondary_action.action"
+          :text="secondary_action.text"
           variant="secondary"
           icon_name="tabler:chevron-right"
         />
@@ -54,8 +52,18 @@
 </template>
 
 <script setup lang="ts">
-const scrollToProjects = () => {
-  const projects = document.getElementById("projects");
-  projects?.scrollIntoView({ behavior: "smooth" });
-};
+interface Props {
+  title: string;
+  body: string;
+  primary_action: {
+    text: string;
+    action: () => void;
+  };
+  secondary_action?: {
+    text: string;
+    action: () => void;
+  };
+}
+
+defineProps<Props>();
 </script>
