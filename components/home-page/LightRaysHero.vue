@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-[600px]">
+  <div class="relative h-[500px]">
     <div
       class="absolute z-40 h-full w-full flex flex-col justify-center items-center px-5"
     >
@@ -28,8 +28,8 @@
       </div>
     </div>
     <LightRays
-      streak-color="#f7ffff"
-      class="top-0 -translate-y-[50px] bg-gradient-to-br from-zinc-800/50 to-black -z-10"
+      streak-color="#ffffff"
+      class="top-0 -translate-y-[50px] bg-gradient-to-br from-zinc-800/80 via-base-950/70 to-base-950 -z-10"
     >
       <template #particles>
         <Particles

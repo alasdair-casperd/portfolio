@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sui-tyndall-effect relative flex gap-10 overflow-hidden h-auto w-full justify-start items-start min-h-screen"
+    class="sui-tyndall-effect relative flex gap-10 overflow-hidden w-full justify-start items-start min-h-[800px] h-[800px]"
     :style="wrapperStyle"
   >
     <div
@@ -26,6 +26,9 @@
     />
     <div
       class="overlay h-56 flex-none absolute left-0 right-0 top-0 z-10 overflow-hidden pointer-events-none"
+    ></div>
+    <div
+      class="absolute bottom-0 w-full h-[100px] gradient to-b from-base-950/0 to-base-950"
     ></div>
     <div
       class="particles-effect flex-none h-[700px] absolute left-0 top-0 right-0"
