@@ -6,7 +6,7 @@ export const pages: Page[] = [
   {
     name: "Bookshelf",
     caption: "Book tracking web app",
-    path: "bookshelf",
+    path: "work-in-progress",
     images: {
       card: "page-previews/bookshelf-page-preview.png",
       list: "apps/wordowl/phones/tools-list-1.png",
@@ -66,8 +66,8 @@ export const pages: Page[] = [
     caption: "Work-in-progress puzzle video game",
     path: "casperd-life-test",
     images: {
-      card: "page-previews/tanks-arena-page-preview.png",
-      list: "page-previews/tanks-arena-page-preview.png",
+      card: "page-previews/a-big-knight-out-page-preview.png",
+      list: "page-previews/a-big-knight-out-page-preview.png",
     },
     tags: [tags.c_sharp, tags.unity],
     category: categories.games_development,
@@ -86,7 +86,7 @@ export const pages: Page[] = [
   {
     name: "Trace",
     caption: "iOS mathematical graphing app concept",
-    path: "casperd-life-test",
+    path: "apps/trace",
     images: {
       card: "page-previews/trace-page-preview.png",
       list: "page-previews/trace-page-preview.png",
@@ -110,7 +110,7 @@ export const pages: Page[] = [
   {
     name: "Lessons",
     caption: "Lorem ipsum dolor.",
-    path: "casperd-life-test",
+    path: "apps/lessons",
     images: {
       card: "page-previews/lessons-page-preview.png",
       list: "page-previews/lessons-page-preview.png",
