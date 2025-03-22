@@ -3,18 +3,6 @@
     <div
       class="flex flex-row gap-4 rounded-2xl bg-base-900 border border-base-700 p-4 items-center"
     >
-      <img
-        v-if="page.images.icon"
-        class="w-12 h-12 m-4 rounded-xl object-contain"
-        :src="page.images.icon"
-        :alt="page.name"
-      />
-      <img
-        v-else
-        class="w-20 h-20 object-contain"
-        :src="page.images.list"
-        :alt="page.name"
-      />
       <div class="w-full flex flex-row justify-between items-center">
         <div>
           <div class="text-xl">

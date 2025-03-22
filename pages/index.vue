@@ -22,6 +22,8 @@
 <script setup lang="ts">
 import { categories } from "~/data/category.data";
 
+definePageMeta({ title: "Alasdair Casperd - Portfolio" });
+
 // Send an email to hello@alasdaircasperd.com
 const triggerEmail = () => {
   window.location.href = "mailto:hello@alasdaircasperd.com";

@@ -4,7 +4,7 @@
       class="aspect-16/9 w-full rounded-lg mb-4 overflow-hidden bg-base-900 border-base-700 border"
     >
       <img
-        :src="page.images.card"
+        :src="page.page_preview_image"
         :alt="page.name"
         class="object-cover hover:scale-[1.03] transition-transform duration-300 h-full w-full"
       />

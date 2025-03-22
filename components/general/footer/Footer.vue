@@ -19,10 +19,10 @@
 
 <script setup lang="ts">
 const links = [
-  { text: "Lorem", href: "/" },
-  { text: "Ipsum", href: "/" },
-  { text: "Dolor", href: "/" },
-  { text: "Sit", href: "/" },
-  { text: "Amet", href: "/" },
+  { text: "iOS Apps", href: "/apps" },
+  { text: "Web Development", href: "/web-development" },
+  { text: "Web Design", href: "/web-design" },
+  { text: "Games Development", href: "/games-development" },
+  { text: "Contact", href: "mailto:hello@alasdaircasperd.com" },
 ];
 </script>
