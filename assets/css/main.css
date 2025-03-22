@@ -46,7 +46,7 @@ body {
 
   p,
   li {
-    @apply text-sm text-base-400;
+    @apply text-[15px] text-base-400;
   }
 
   li {

@@ -2,7 +2,7 @@
   <div
     class="rounded-xl border border-base-700 bg-base-800 overflow-hidden my-4"
   >
-    <img :src="src" :alt="alt" />
+    <img :src="src" :alt="alt" class="w-full" />
   </div>
 </template>
 

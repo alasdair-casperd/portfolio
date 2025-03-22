@@ -1,7 +1,7 @@
 <template>
   <div class="article">
     <h2 class="mb-4">{{ title }}</h2>
-    <div class="flex flex-col gap-3 article">
+    <div class="flex flex-col gap-4 article">
       <slot />
     </div>
   </div>

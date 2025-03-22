@@ -20,7 +20,7 @@
       </div>
     </div>
     <div
-      class="p-4 sm:p-8 rounded-xl border border-base-700 bg-base-900 w-full max-w-[800px] flex flex-col gap-6"
+      class="p-4 sm:p-8 rounded-xl border border-base-700 bg-base-900 w-full max-w-[800px] flex flex-col gap-8"
     >
       <slot />
     </div>

@@ -75,7 +75,7 @@ export const pages: Page[] = [
   {
     name: "Tanks Arena",
     caption: "Video game with multiplayer and level editor",
-    path: "casperd-life-test",
+    path: "games-development/tanks-arena",
     images: {
       card: "page-previews/tanks-arena-page-preview.png",
       list: "page-previews/tanks-arena-page-preview.png",
