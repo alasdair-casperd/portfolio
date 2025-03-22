@@ -59,10 +59,10 @@
       <p>
         For Android users or those who simply prefer a larger screen, the daily
         puzzle can also be played online through the official Domingo
-        <a href="https://domingo-app.com">website</a>!
+        <a href="https://domingo-app.com" target="blank">website</a>!
       </p>
       <ArticleImage
-        src="/web-design/domingo-splash-uniform-2.png"
+        src="/web-development/domingo/domingo-splash-uniform-2.png"
         alt="Domingo Website"
       />
     </ArticleSection>
@@ -98,6 +98,7 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({ title: "Domingo" });
 import { code_snippets } from "~/data/code-snippets.data";
 
 const gallery_1_images = [

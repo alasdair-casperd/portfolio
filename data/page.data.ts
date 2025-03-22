@@ -98,7 +98,7 @@ export const pages: Page[] = [
   {
     name: "Backtrack",
     caption: "Lorem ipsum dolor.",
-    path: "casperd-life-test",
+    path: "apps/backtrack",
     images: {
       card: "page-previews/backtrack-page-preview.png",
       list: "page-previews/backtrack-page-preview.png",

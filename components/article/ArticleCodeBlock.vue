@@ -16,7 +16,7 @@
 
           {{ snippet.file_name }}
         </div>
-        <a :to="snippet.link" target="_blank" class="plain-link">
+        <a :href="snippet.link" target="_blank" class="plain-link">
           <Icon
             name="tabler:external-link"
             class="cursor-pointer text-base hover:text-white"
@@ -45,7 +45,7 @@ interface Props {
 
 const icons = {
   swift: "tabler:brand-swift",
-  "C#": "tabler:brand-csharp",
+  csharp: "tabler:brand-c-sharp",
   typescript: "tabler:brand-typescript",
 };
 defineProps<Props>();
