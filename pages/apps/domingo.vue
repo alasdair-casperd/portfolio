@@ -3,6 +3,7 @@
     title="Domingo"
     subtitle="iOS Puzzle App"
     icon="/apps/domingo/app-icon.png"
+    :category="categories.ios_development"
   >
     <ArticleSection title="App Concept">
       <p>
@@ -99,6 +100,7 @@
 
 <script setup lang="ts">
 definePageMeta({ title: "Domingo" });
+import { categories } from "~/data/category.data";
 import { code_snippets } from "~/data/code-snippets.data";
 
 const gallery_1_images = [

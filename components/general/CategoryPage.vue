@@ -4,7 +4,7 @@
       <h1 class="text-5xl font-medium mb-4">{{ category.name }}</h1>
       <p class="text-base-500">{{ category.description }}</p>
     </div>
-    <CategoryGrid :category="category" :hide_title="true" />
+    <CategoryGrid :category="category" :title="null" class="px-4 sm:px-12" />
     <div class="px-12 mt-24">
       <div class="font-bold text-3xl sm:font-normal sm:text-4xl w-full mb-8">
         Other Categories

@@ -3,6 +3,7 @@
     title="WordOwl"
     subtitle="Word-Finding iOS App"
     icon="/apps/wordowl/app-icon.png"
+    :category="categories.ios_development"
   >
     <ArticleSection title="App Concept">
       <p>
@@ -102,6 +103,8 @@
 </template>
 
 <script setup lang="ts">
+import { categories } from "~/data/category.data";
+
 const gallery_1_images = [
   { src: "/apps/wordowl/phones/tools-list-1.png", caption: "Search Tools" },
   { src: "/apps/wordowl/phones/ending-letters.png", caption: "Example Search" },

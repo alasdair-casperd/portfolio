@@ -3,6 +3,7 @@
     title="Lessons"
     subtitle="Invoicing Tool for Tutors"
     icon="/apps/lessons/app-icon.png"
+    :category="categories.ios_development"
   >
     <ArticleSection title="App Concept">
       <p>
@@ -59,6 +60,8 @@
 </template>
 
 <script setup lang="ts">
+import { categories } from "~/data/category.data";
+
 const gallery_images = [
   { src: "/apps/lessons/phones/calendar-view.png", caption: "Calendar View" },
   { src: "/apps/lessons/phones/hours.png", caption: "Hours View" },

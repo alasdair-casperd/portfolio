@@ -14,7 +14,7 @@
     }"
   />
 
-  <div class="flex flex-col gap-24 py-24 z-50" id="projects">
+  <div class="flex flex-col gap-24 py-24 z-50 px-4 sm:px-12" id="projects">
     <CategoryGrid v-for="category in categories" :category="category" />
   </div>
 </template>

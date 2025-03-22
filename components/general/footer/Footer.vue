@@ -19,9 +19,10 @@
 
 <script setup lang="ts">
 const links = [
-  { text: "iOS Apps", href: "/apps" },
+  { text: "Home", href: "/" },
   { text: "Web Development", href: "/web-development" },
-  { text: "Web Design", href: "/web-design" },
+  { text: "iOS Apps", href: "/apps" },
+  // { text: "Web Design", href: "/web-design" },
   { text: "Games Development", href: "/games-development" },
   { text: "Contact", href: "mailto:hello@alasdaircasperd.com" },
 ];

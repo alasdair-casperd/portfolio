@@ -24,14 +24,23 @@
     >
       <slot />
     </div>
+    <MoreFromThisCategory
+      class="w-full max-w-[800px]"
+      v-if="category"
+      :category="category"
+    ></MoreFromThisCategory>
   </div>
 </template>
 
 <script setup lang="ts">
+import type { Category } from "~/types/category";
+
 interface Props {
   title: string;
   icon?: string;
   subtitle?: string;
+  category?: Category;
 }
+
 defineProps<Props>();
 </script>

@@ -1,19 +1,13 @@
 <template>
-  <div class="text-white px-4 sm:px-12">
+  <div class="text-white">
     <div class="flex flex-row items-center gap-6 sm:gap-10 pb-6 sm:pb-12">
-      <div
-        v-if="!hide_title"
-        class="font-bold text-3xl sm:font-normal sm:text-4xl w-full"
-      >
-        {{ category.name }}
+      <div class="font-bold text-3xl sm:font-normal sm:text-4xl w-full">
+        <template v-if="title === undefined">{{ category.name }}</template>
+        <template v-else-if="title !== null">{{ title }}</template>
       </div>
     </div>
-
-    <ResponsiveGrid>
-      <PageCard
-        v-for="page in pages.filter((page) => page.category === category)"
-        :page="page"
-      />
+    <ResponsiveGrid ref="el">
+      <PageCard v-for="page in category_pages" :page="page" />
     </ResponsiveGrid>
   </div>
 </template>
@@ -21,11 +15,16 @@
 <script setup lang="ts">
 import { pages } from "~/data/page.data";
 import type { Category } from "~/types/category";
+import type { Page } from "~/types/page";
 
 interface Props {
   category: Category;
-  hide_title?: boolean;
+  title?: string | null;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const category_pages = pages.filter(
+  (p) => p.category.name === props.category.name
+);
 </script>
