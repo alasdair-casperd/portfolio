@@ -36,7 +36,7 @@
     <!-- Featured pages -->
     <ArticleSuggestedPages
       class="w-full max-w-[800px]"
-      v-if="same_category_pages.length > 2"
+      v-if="distinct_featured_pages.length > 2"
       :pages="distinct_featured_pages"
       title="Featured Projects"
     ></ArticleSuggestedPages>
