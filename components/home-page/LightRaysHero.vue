@@ -1,17 +1,17 @@
 <template>
   <div class="relative h-[500px]">
     <div
-      class="absolute z-40 h-full w-full flex flex-col justify-center items-center px-5"
+      class="absolute z-40 h-full w-full flex flex-col justify-center items-start text-left min-[500px]:text-center min-[500px]:items-center px-4 sm:px-5"
     >
       <h1
-        class="mt-8 bg-linear-to-br from-base-100/90 via-sky-100 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
+        class="mt-8 bg-linear-to-br from-base-100/90 via-sky-100 to-white bg-clip-text text-4xl font-medium tracking-tight text-transparent md:text-6xl"
       >
         Welcome to my Portfolio <br />
       </h1>
 
-      <p class="text-base-500 mt-6 text-center md:max-w-[600px]">{{ body }}</p>
+      <p class="text-base-500 mt-6 md:max-w-[600px]">{{ body }}</p>
 
-      <div class="flex flex-col sm:flex-row gap-5 mt-7">
+      <div class="flex flex-col min-[337px]:flex-row gap-2 sm:gap-5 mt-7">
         <Button
           @click="primary_action.action"
           :text="primary_action.text"

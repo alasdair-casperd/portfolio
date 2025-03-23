@@ -4,7 +4,7 @@
   >
     <Icon name="icon-park-solid:diamond-two" class="text-2xl text-violet-400" />
     <div
-      class="flex flex-col min-[550px]:flex-row justify-center gap-2 sm:gap-8 text-center"
+      class="flex flex-col min-[550px]:flex-row justify-center gap-4 sm:gap-8 text-center"
     >
       <FooterLink
         v-for="link in links"
