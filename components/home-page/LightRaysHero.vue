@@ -4,7 +4,7 @@
       class="absolute z-40 h-full w-full flex flex-col justify-center items-center px-5"
     >
       <h1
-        class="mt-8 bg-linear-to-br from-base-100/90 via-sky-100 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl leading-20"
+        class="mt-8 bg-linear-to-br from-base-100/90 via-sky-100 to-white bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-6xl"
       >
         Welcome to my Portfolio <br />
       </h1>

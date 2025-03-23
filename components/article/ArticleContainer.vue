@@ -24,24 +24,35 @@
     >
       <slot />
     </div>
+    <div
+      class="sm:hidden flex flex-row text-center items-center justify-center gap-2 mt-10"
+    >
+      <Button
+        text="Return Home"
+        variant="secondary"
+        @click="() => $router.push('/')"
+        icon_name="tabler:arrow-back-up"
+      />
+    </div>
+    <div class="mx-4 hidden sm:block">
+      <!-- More from this category -->
+      <ArticleSuggestedPages
+        class="w-full max-w-[800px]"
+        v-if="same_category_pages.length > 2"
+        :pages="same_category_pages"
+        :title="props.page.category.more_text"
+        :link="{ text: 'See All', href: props.page.category.path }"
+      ></ArticleSuggestedPages>
 
-    <!-- More from this category -->
-    <ArticleSuggestedPages
-      class="w-full max-w-[800px]"
-      v-if="same_category_pages.length > 2"
-      :pages="same_category_pages"
-      :title="props.page.category.more_text"
-      :link="{ text: 'See All', href: props.page.category.path }"
-    ></ArticleSuggestedPages>
-
-    <!-- Featured pages -->
-    <ArticleSuggestedPages
-      class="w-full max-w-[800px]"
-      v-if="distinct_featured_pages.length > 2"
-      :pages="distinct_featured_pages"
-      title="Featured Projects"
-      :link="{ text: 'See All', href: '/' }"
-    ></ArticleSuggestedPages>
+      <!-- Featured pages -->
+      <ArticleSuggestedPages
+        class="w-full max-w-[800px]"
+        v-if="distinct_featured_pages.length > 2"
+        :pages="distinct_featured_pages"
+        title="Featured Projects"
+        :link="{ text: 'See All', href: '/' }"
+      ></ArticleSuggestedPages>
+    </div>
   </div>
 </template>
 
@@ -49,6 +60,7 @@
 import ArticleSuggestedPages from "./ArticleSuggestedPages.vue";
 import { featured_pages, pages } from "~/data/page.data";
 import type { Page } from "~/types/page";
+import Button from "../general/Button.vue";
 
 interface Props {
   page: Page;

@@ -38,7 +38,7 @@ import HeaderIcon from "./HeaderIcon.vue";
 const scroll_distance = ref(0);
 
 const background_opacity = computed(() => {
-  const opacity = scroll_distance.value / 300;
+  const opacity = scroll_distance.value / 100;
   return opacity > 1 ? 1 : opacity;
 });
 

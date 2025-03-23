@@ -1,7 +1,7 @@
 <template>
   <div
     :class="background_classes"
-    class="border p-4 rounded-2xl flex flex-row items-center my-4"
+    class="border p-4 rounded-2xl flex flex-col sm:flex-row items-start gap-2 sm:items-center my-4"
   >
     <div class="w-10 min-w-10 flex items-center">
       <Icon :name="icon_name" :class="icon_classes" class="text-2xl" />
