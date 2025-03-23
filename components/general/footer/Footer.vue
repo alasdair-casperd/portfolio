@@ -2,7 +2,7 @@
   <div
     class="flex flex-col items-center gap-6 w-full bg-black p-12 text-sm border-t border-base-800"
   >
-    <Icon name="icon-park-solid:diamond-two" class="text-2xl text-violet-400" />
+    <div class="w-[14px] h-[14px] rounded-xs rotate-45 bg-accent mb-2" />
     <div
       class="flex flex-col min-[550px]:flex-row justify-center gap-4 sm:gap-8 text-center"
     >

@@ -6,8 +6,8 @@
     />
     <div class="px-4 p-2 flex flex-row items-center justify-between">
       <div class="flex flex-row gap-3">
-        <NuxtLink to="/" class="font-bold flex flex-row gap-2 items-center">
-          <Icon name="tabler:diamonds-filled" />
+        <NuxtLink to="/" class="font-bold flex flex-row gap-3 items-center">
+          <div class="w-[10px] h-[10px] rounded-xs rotate-45 bg-accent" />
           <span>Alasdair Casperd</span>
         </NuxtLink>
         <div class="text-base-500 hidden sm:flex">Portfolio</div>
