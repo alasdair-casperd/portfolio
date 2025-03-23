@@ -59,7 +59,8 @@
 </template>
 
 <script setup lang="ts">
-import { categories } from "~/data/category.data";
+useHead({ title: "Trace • Alasdair Casperd Portfolio" });
+
 import { code_snippets } from "~/data/code-snippets.data";
 import { pages } from "~/data/page.data";
 

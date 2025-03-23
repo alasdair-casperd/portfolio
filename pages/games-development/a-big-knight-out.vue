@@ -113,16 +113,8 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({ title: "Domingo" });
+useHead({ title: "A Big Knight Out • Alasdair Casperd Portfolio" });
+
 import { code_snippets } from "~/data/code-snippets.data";
 import { pages } from "~/data/page.data";
-
-const gallery_1_images = [
-  { src: "/apps/domingo/phones/main-menu.png", caption: "Main Menu" },
-  { src: "/apps/domingo/phones/daily-puzzle-1.png", caption: "Daily Puzzle" },
-  {
-    src: "/apps/domingo/phones/daily-puzzle-launcher.png",
-    caption: "Puzzle Launcher",
-  },
-];
 </script>

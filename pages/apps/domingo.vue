@@ -99,8 +99,8 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({ title: "Domingo" });
-import { categories } from "~/data/category.data";
+useHead({ title: "Domingo • Alasdair Casperd Portfolio" });
+
 import { code_snippets } from "~/data/code-snippets.data";
 import { pages } from "~/data/page.data";
 

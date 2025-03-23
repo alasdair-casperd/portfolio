@@ -45,8 +45,10 @@
 </template>
 
 <script setup lang="ts">
-import { categories } from "~/data/category.data";
-import { code_snippets } from "~/data/code-snippets.data";
+useHead({
+  title: "Backtrack • Alasdair Casperd Portfolio",
+});
+
 import { pages } from "~/data/page.data";
 
 const gallery_images = [

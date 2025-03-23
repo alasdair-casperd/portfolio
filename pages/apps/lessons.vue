@@ -60,7 +60,8 @@
 </template>
 
 <script setup lang="ts">
-import { categories } from "~/data/category.data";
+useHead({ title: "Lessons • Alasdair Casperd Portfolio" });
+
 import { pages } from "~/data/page.data";
 
 const gallery_images = [

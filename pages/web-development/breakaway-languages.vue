@@ -33,39 +33,7 @@
 </template>
 
 <script setup lang="ts">
+useHead({ title: "Breakaway Languages • Alasdair Casperd Portfolio" });
+
 import { pages } from "~/data/page.data";
-
-const gallery_1_images = [
-  { src: "/apps/wordowl/phones/tools-list-1.png", caption: "Search Tools" },
-  { src: "/apps/wordowl/phones/ending-letters.png", caption: "Example Search" },
-  { src: "/apps/wordowl/phones/results.png", caption: "Results" },
-  {
-    src: "/apps/wordowl/phones/compound-search.png",
-    caption: "Compound Search",
-  },
-  { src: "/apps/wordowl/phones/checklist-mode.png", caption: "Checklist Mode" },
-];
-
-const gallery_2_images = [
-  {
-    src: "/apps/wordowl/phones/crossword-solver.png",
-    caption: "Crossword Solver",
-  },
-  { src: "/apps/wordowl/phones/wordle-solver.png", caption: "Wordle Solver" },
-  { src: "/apps/wordowl/phones/first-letter.png", caption: "First Letter" },
-  { src: "/apps/wordowl/phones/ending-letters.png", caption: "Ending Letters" },
-  {
-    src: "/apps/wordowl/phones/contains-quantities.png",
-    caption: "Contains Quantities",
-  },
-  { src: "/apps/wordowl/phones/anagrams.png", caption: "Anagrams" },
-  {
-    src: "/apps/wordowl/phones/contains-string.png",
-    caption: "Contains String",
-  },
-  {
-    src: "/apps/wordowl/phones/matches-pattern-tool.png",
-    caption: "Matches Pattern Tool",
-  },
-];
 </script>

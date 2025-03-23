@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import { code_snippets } from "~/data/code-snippets.data";
-import { pages } from "~/data/page.data";
-</script>
-
 <template>
   <ArticleContainer
     title="The Illusionist Companion Sites"
@@ -40,3 +35,10 @@ import { pages } from "~/data/page.data";
     </ArticleSection>
   </ArticleContainer>
 </template>
+
+<script setup lang="ts">
+useHead({ title: "The Illusionist Sites • Alasdair Casperd Portfolio" });
+
+import { code_snippets } from "~/data/code-snippets.data";
+import { pages } from "~/data/page.data";
+</script>

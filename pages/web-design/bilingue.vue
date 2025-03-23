@@ -31,5 +31,7 @@
 </template>
 
 <script setup lang="ts">
+useHead({ title: "Bilingüe • Alasdair Casperd Portfolio" });
+
 import { pages } from "~/data/page.data";
 </script>

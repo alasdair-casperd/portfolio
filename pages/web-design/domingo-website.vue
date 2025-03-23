@@ -33,5 +33,7 @@
 </template>
 
 <script setup lang="ts">
+useHead({ title: "Domingo Companion Site • Alasdair Casperd Portfolio" });
+
 import { pages } from "~/data/page.data";
 </script>

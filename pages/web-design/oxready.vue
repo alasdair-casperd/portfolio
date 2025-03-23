@@ -33,5 +33,7 @@
 </template>
 
 <script setup lang="ts">
+useHead({ title: "OxReady • Alasdair Casperd Portfolio" });
+
 import { pages } from "~/data/page.data";
 </script>

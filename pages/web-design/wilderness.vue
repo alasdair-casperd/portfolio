@@ -29,5 +29,7 @@
 </template>
 
 <script setup lang="ts">
+useHead({ title: "Wilderness • Alasdair Casperd Portfolio" });
+
 import { pages } from "~/data/page.data";
 </script>

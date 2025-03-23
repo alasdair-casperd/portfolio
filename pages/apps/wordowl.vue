@@ -103,7 +103,8 @@
 </template>
 
 <script setup lang="ts">
-import { categories } from "~/data/category.data";
+useHead({ title: "WordOwl • Alasdair Casperd Portfolio" });
+
 import { pages } from "~/data/page.data";
 
 const gallery_1_images = [
