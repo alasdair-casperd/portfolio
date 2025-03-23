@@ -98,7 +98,7 @@ export const pages: Record<string, Page> = {
   bilingue: {
     name: "Bilingüe",
     caption: "Lorem ipsum dolor.",
-    path: "/casperd-life-test",
+    path: "/web-design/bilingue",
     page_preview_image: "/page-previews/bilingue-page-preview.png",
     tags: [tags.html, tags.css],
     category: categories.web_design,
@@ -106,7 +106,7 @@ export const pages: Record<string, Page> = {
   wilderness: {
     name: "Wilderness",
     caption: "Lorem ipsum dolor.",
-    path: "/casperd-life-test",
+    path: "/web-design/wilderness",
     page_preview_image: "/page-previews/wilderness-page-preview.png",
     tags: [tags.html, tags.css],
     category: categories.web_design,
@@ -114,7 +114,7 @@ export const pages: Record<string, Page> = {
   poolhullock_farm: {
     name: "Poolhullock Farm",
     caption: "Lorem ipsum dolor.",
-    path: "/casperd-life-test",
+    path: "/web-design/poolhullock-farm",
     page_preview_image: "/page-previews/poolhullock-page-preview.png",
     tags: [tags.html, tags.css],
     category: categories.web_design,
@@ -122,7 +122,7 @@ export const pages: Record<string, Page> = {
   domingo_website: {
     name: "Domingo – Companion Website",
     caption: "Lorem ipsum dolor.",
-    path: "/casperd-life-test",
+    path: "/web-design/domingo-website",
     page_preview_image: "/page-previews/domingo-website-page-preview.png",
     tags: [tags.html, tags.css],
     category: categories.web_design,
@@ -130,7 +130,7 @@ export const pages: Record<string, Page> = {
   oxready: {
     name: "OxReady",
     caption: "Lorem ipsum dolor.",
-    path: "/casperd-life-test",
+    path: "/web-design/oxready",
     page_preview_image: "/page-previews/oxready-page-preview.png",
     tags: [tags.html, tags.css],
     category: categories.web_design,
