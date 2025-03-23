@@ -3,15 +3,15 @@ import { categories } from "./category.data";
 import { tags } from "./tag.data";
 
 export const pages: Record<string, Page> = {
-  bookshelf: {
-    name: "Bookshelf",
-    caption: "Book tracking web app",
-    path: "/work-in-progress",
-    page_preview_image: "/page-previews/bookshelf-page-preview.png",
-    tags: [tags.typescript, tags.vue, tags.tailwind, tags.nuxt],
-    category: categories.web_development,
-    featured: true,
-  },
+  // bookshelf: {
+  //   name: "Bookshelf",
+  //   caption: "Book tracking web app",
+  //   path: "/work-in-progress",
+  //   page_preview_image: "/page-previews/bookshelf-page-preview.png",
+  //   tags: [tags.typescript, tags.vue, tags.tailwind, tags.nuxt],
+  //   category: categories.web_development,
+  //   featured: true,
+  // },
   casperd_life_test: {
     name: "Casperd Life Test",
     caption: "Interactive quiz site built with react and next.js",
@@ -24,7 +24,7 @@ export const pages: Record<string, Page> = {
   the_illusionist: {
     name: "The Illusionist – Companion Sites",
     caption: "Websites built to support an envelope escape room",
-    path: "/casperd-life-test",
+    path: "/web-development/the-illusionist-companion-sites",
     page_preview_image: "/page-previews/the-illusionist-page-preview.png",
     tags: [tags.typescript, tags.react, tags.tailwind, tags.next],
     category: categories.web_development,
