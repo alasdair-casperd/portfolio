@@ -3,7 +3,7 @@
     title="Backtrack"
     subtitle="Hiking Companion App"
     icon="/apps/backtrack/app-icon.png"
-    :category="categories.ios_development"
+    :page="pages.backtrack"
   >
     <ArticleSection title="App Concept">
       <p>
@@ -47,6 +47,7 @@
 <script setup lang="ts">
 import { categories } from "~/data/category.data";
 import { code_snippets } from "~/data/code-snippets.data";
+import { pages } from "~/data/page.data";
 
 const gallery_images = [
   { src: "/apps/backtrack/phones/trip-view.png", caption: "Trip View" },

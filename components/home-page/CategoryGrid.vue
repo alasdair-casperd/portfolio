@@ -24,7 +24,7 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const category_pages = pages.filter(
+const category_pages = Object.values(pages).filter(
   (p) => p.category.name === props.category.name
 );
 </script>

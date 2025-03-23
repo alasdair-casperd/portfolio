@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { code_snippets } from "~/data/code-snippets.data";
+import { pages } from "~/data/page.data";
 </script>
 
 <template>
@@ -7,6 +8,7 @@ import { code_snippets } from "~/data/code-snippets.data";
     title="Tanks Arena"
     subtitle="Multiplayer Tank Battle Game"
     icon="/games-development/tanks-arena/icon.png"
+    :page="pages.tanks_arena"
   >
     <ArticleSection title="Game Concept">
       <p>

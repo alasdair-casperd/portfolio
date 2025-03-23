@@ -2,6 +2,7 @@
   <ArticleContainer
     title="A Big Knight Out"
     subtitle="Work-in-progress video game."
+    :page="pages.a_big_knight_out"
   >
     <ArticleSection title="Game Concept">
       <ArticleImage
@@ -114,6 +115,7 @@
 <script setup lang="ts">
 definePageMeta({ title: "Domingo" });
 import { code_snippets } from "~/data/code-snippets.data";
+import { pages } from "~/data/page.data";
 
 const gallery_1_images = [
   { src: "/apps/domingo/phones/main-menu.png", caption: "Main Menu" },

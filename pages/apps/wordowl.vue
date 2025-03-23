@@ -3,7 +3,7 @@
     title="WordOwl"
     subtitle="Word-Finding iOS App"
     icon="/apps/wordowl/app-icon.png"
-    :category="categories.ios_development"
+    :page="pages.wordowl"
   >
     <ArticleSection title="App Concept">
       <p>
@@ -104,6 +104,7 @@
 
 <script setup lang="ts">
 import { categories } from "~/data/category.data";
+import { pages } from "~/data/page.data";
 
 const gallery_1_images = [
   { src: "/apps/wordowl/phones/tools-list-1.png", caption: "Search Tools" },

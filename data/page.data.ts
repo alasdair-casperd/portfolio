@@ -2,24 +2,26 @@ import type { Page } from "~/types/page";
 import { categories } from "./category.data";
 import { tags } from "./tag.data";
 
-export const pages: Page[] = [
-  {
+export const pages: Record<string, Page> = {
+  bookshelf: {
     name: "Bookshelf",
     caption: "Book tracking web app",
     path: "/work-in-progress",
     page_preview_image: "/page-previews/bookshelf-page-preview.png",
     tags: [tags.typescript, tags.vue, tags.tailwind, tags.nuxt],
     category: categories.web_development,
+    featured: true,
   },
-  {
+  casperd_life_test: {
     name: "Casperd Life Test",
     caption: "Interactive quiz site built with react and next.js",
     path: "/web-development/casperd-life-test",
     page_preview_image: "/page-previews/casperd-life-test-page-preview.png",
     tags: [tags.typescript, tags.react, tags.tailwind, tags.next],
     category: categories.web_development,
+    featured: true,
   },
-  {
+  the_illusionist: {
     name: "The Illusionist – Companion Sites",
     caption: "Websites built to support an envelope escape room",
     path: "/casperd-life-test",
@@ -27,15 +29,16 @@ export const pages: Page[] = [
     tags: [tags.typescript, tags.react, tags.tailwind, tags.next],
     category: categories.web_development,
   },
-  {
+  wordowl: {
     name: "WordOwl",
     caption: "Published iOS word-game companion app",
     path: "/apps/wordowl",
     page_preview_image: "/page-previews/wordowl-page-preview.png",
     tags: [tags.swift, tags.swift_ui],
     category: categories.ios_development,
+    featured: true,
   },
-  {
+  domingo: {
     name: "Domingo",
     caption: "Published iOS daily word puzzle app",
     path: "/apps/domingo",
@@ -43,7 +46,7 @@ export const pages: Page[] = [
     tags: [tags.swift, tags.swift_ui],
     category: categories.ios_development,
   },
-  {
+  a_big_knight_out: {
     name: "A Big Knight Out",
     caption: "Work-in-progress puzzle video game",
     path: "/games-development/a-big-knight-out",
@@ -51,15 +54,16 @@ export const pages: Page[] = [
     tags: [tags.c_sharp, tags.unity],
     category: categories.games_development,
   },
-  {
+  tanks_arena: {
     name: "Tanks Arena",
     caption: "Video game with multiplayer and level editor",
     path: "/games-development/tanks-arena",
     page_preview_image: "/page-previews/tanks-arena-page-preview.png",
     tags: [tags.c_sharp, tags.unity],
     category: categories.games_development,
+    featured: true,
   },
-  {
+  trace: {
     name: "Trace",
     caption: "iOS mathematical graphing app concept",
     path: "/apps/trace",
@@ -67,7 +71,7 @@ export const pages: Page[] = [
     tags: [tags.swift, tags.swift_ui],
     category: categories.ios_development,
   },
-  {
+  backtrack: {
     name: "Backtrack",
     caption: "Lorem ipsum dolor.",
     path: "/apps/backtrack",
@@ -75,7 +79,7 @@ export const pages: Page[] = [
     tags: [tags.swift, tags.swift_ui],
     category: categories.ios_development,
   },
-  {
+  lessons: {
     name: "Lessons",
     caption: "Lorem ipsum dolor.",
     path: "/apps/lessons",
@@ -83,7 +87,7 @@ export const pages: Page[] = [
     tags: [tags.swift, tags.swift_ui],
     category: categories.ios_development,
   },
-  {
+  breakaway_languages: {
     name: "Breakaway Languages",
     caption: "Lorem ipsum dolor.",
     path: "/web-development/breakaway-languages",
@@ -91,7 +95,7 @@ export const pages: Page[] = [
     tags: [tags.javascript, tags.react, tags.tailwind, tags.next],
     category: categories.web_development,
   },
-  {
+  bilingue: {
     name: "Bilingüe",
     caption: "Lorem ipsum dolor.",
     path: "/casperd-life-test",
@@ -99,7 +103,7 @@ export const pages: Page[] = [
     tags: [tags.html, tags.css],
     category: categories.web_design,
   },
-  {
+  wilderness: {
     name: "Wilderness",
     caption: "Lorem ipsum dolor.",
     path: "/casperd-life-test",
@@ -107,7 +111,7 @@ export const pages: Page[] = [
     tags: [tags.html, tags.css],
     category: categories.web_design,
   },
-  {
+  poolhullock_farm: {
     name: "Poolhullock Farm",
     caption: "Lorem ipsum dolor.",
     path: "/casperd-life-test",
@@ -115,7 +119,7 @@ export const pages: Page[] = [
     tags: [tags.html, tags.css],
     category: categories.web_design,
   },
-  {
+  domingo_website: {
     name: "Domingo – Companion Website",
     caption: "Lorem ipsum dolor.",
     path: "/casperd-life-test",
@@ -123,7 +127,7 @@ export const pages: Page[] = [
     tags: [tags.html, tags.css],
     category: categories.web_design,
   },
-  {
+  oxready: {
     name: "OxReady",
     caption: "Lorem ipsum dolor.",
     path: "/casperd-life-test",
@@ -131,4 +135,8 @@ export const pages: Page[] = [
     tags: [tags.html, tags.css],
     category: categories.web_design,
   },
-];
+};
+
+export const featured_pages = Object.values(pages).filter(
+  (page) => page.featured
+);

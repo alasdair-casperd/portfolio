@@ -15,7 +15,7 @@
         <!-- <div class="font-light text-base-500">{{ page.caption }}</div> -->
       </div>
       <div class="flex flex-wrap gap-4 mt-2 text-base-600">
-        <SubtleTag v-for="tag in page.tags" :key="tag.name" :tag="tag" />
+        <SubtleTag v-for="tag in tags" :key="tag.name" :tag="tag" />
       </div>
     </div>
   </NuxtLink>
@@ -26,7 +26,13 @@ import type { Page } from "~/types/page";
 
 interface Props {
   page: Page;
+  tag_limit?: number;
 }
 
 const props = defineProps<Props>();
+
+const tags = computed(() => {
+  if (!props.tag_limit) return props.page.tags;
+  return props.page.tags.slice(0, props.tag_limit);
+});
 </script>

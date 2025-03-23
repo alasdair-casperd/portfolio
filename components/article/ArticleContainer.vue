@@ -24,23 +24,42 @@
     >
       <slot />
     </div>
-    <MoreFromThisCategory
+
+    <!-- More from this category -->
+    <ArticleSuggestedPages
       class="w-full max-w-[800px]"
-      v-if="category"
-      :category="category"
-    ></MoreFromThisCategory>
+      v-if="same_category_pages.length > 2"
+      :pages="same_category_pages"
+      :title="props.page.category.more_text"
+    ></ArticleSuggestedPages>
+
+    <!-- Featured pages -->
+    <ArticleSuggestedPages
+      class="w-full max-w-[800px]"
+      v-if="same_category_pages.length > 2"
+      :pages="distinct_featured_pages"
+      title="Featured Projects"
+    ></ArticleSuggestedPages>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { Category } from "~/types/category";
+import ArticleSuggestedPages from "./ArticleSuggestedPages.vue";
+import { featured_pages, pages } from "~/data/page.data";
+import type { Page } from "~/types/page";
 
 interface Props {
+  page: Page;
   title: string;
   icon?: string;
   subtitle?: string;
-  category?: Category;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const same_category_pages = Object.values(pages).filter(
+  (p) => p.category.name === props.page.category.name && p !== props.page
+);
+
+const distinct_featured_pages = featured_pages.filter((p) => p !== props.page);
 </script>

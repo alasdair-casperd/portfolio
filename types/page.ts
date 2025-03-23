@@ -8,4 +8,5 @@ export type Page = {
   page_preview_image: string;
   tags: Tag[];
   category: Category;
+  featured?: boolean;
 };
