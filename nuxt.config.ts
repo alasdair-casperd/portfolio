@@ -14,4 +14,12 @@ export default defineNuxtConfig({
     },
   ],
   modules: ["@nuxt/icon", "@nuxt/fonts", "@vueuse/motion/nuxt"],
+  app: {
+    head: {
+      title: "Alasdair Casperd Portfolio", // default fallback title
+      htmlAttrs: {
+        lang: "en",
+      },
+    },
+  },
 });
