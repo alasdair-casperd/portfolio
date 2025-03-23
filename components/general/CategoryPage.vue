@@ -5,9 +5,17 @@
       <p class="text-base-500">{{ category.description }}</p>
     </div>
     <CategoryGrid :category="category" :title="null" class="px-4 sm:px-12" />
-    <div class="px-12 mt-24">
-      <div class="font-bold text-3xl sm:font-normal sm:text-4xl w-full mb-8">
-        Other Categories
+    <div class="px-12 mt-24 w-full">
+      <div class="flex flex-row items-end justify-between mb-8">
+        <div class="font-bold text-3xl sm:font-normal sm:text-4xl">
+          Other Categories
+        </div>
+        <NuxtLink
+          to="/"
+          class="uppercase tracking-widest text-sm font-medium text-base-600 hover:text-base-300 transition-colors cursor-pointer"
+        >
+          See All
+        </NuxtLink>
       </div>
       <div>
         <ResponsiveGrid>
