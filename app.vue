@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { NuxtLayout, NuxtPage } from "#components";
-</script>
-
 <template>
   <div>
     <NuxtLayout>
@@ -10,7 +6,7 @@ import { NuxtLayout, NuxtPage } from "#components";
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 useSeoMeta({
   title: "Alasdair Casperd – Portfolio",
   ogTitle: "Alasdair Casperd – Portfolio",
