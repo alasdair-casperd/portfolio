@@ -20,10 +20,11 @@
 <script setup lang="ts">
 const links = [
   { text: "Home", href: "/" },
-  { text: "Web Development", href: "/web-development" },
-  { text: "iOS Apps", href: "/apps" },
-  // { text: "Web Design", href: "/web-design" },
-  { text: "Games Development", href: "/games-development" },
+  { text: "GitHub", href: "https://github.com/alasdair-casperd" },
+  {
+    text: "LinkedIn",
+    href: "https://www.linkedin.com/in/alasdair-casperd-105383231/",
+  },
   { text: "Contact", href: "mailto:hello@alasdaircasperd.com" },
 ];
 </script>

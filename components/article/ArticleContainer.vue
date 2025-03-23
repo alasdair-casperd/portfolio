@@ -34,14 +34,14 @@
         icon_name="tabler:arrow-back-up"
       />
     </div>
-    <div class="mx-4 hidden sm:block">
+    <div class="mx-4 hidden sm:flex flex-col gap-14">
       <!-- More from this category -->
       <ArticleSuggestedPages
         class="w-full max-w-[800px]"
         v-if="same_category_pages.length > 2"
         :pages="same_category_pages"
         :title="props.page.category.more_text"
-        :link="{ text: 'See All', href: props.page.category.path }"
+        :link="{ text: 'See All', href: `/#${props.page.category.name}` }"
       ></ArticleSuggestedPages>
 
       <!-- Featured pages -->

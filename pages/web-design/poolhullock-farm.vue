@@ -2,7 +2,7 @@
   <ArticleContainer
     title="Poolhullock Farm"
     subtitle="Farm Website Design"
-    :page="pages.poolhullock"
+    :page="pages.poolhullock_farm"
   >
     <ArticleSection title="Overview">
       <p>

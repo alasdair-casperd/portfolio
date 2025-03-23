@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white">
+  <div class="text-white scroll-mt-24" :id="category.name">
     <div class="flex flex-row items-center gap-6 sm:gap-10 pb-6 sm:pb-12">
       <div class="font-bold text-3xl sm:font-normal sm:text-4xl w-full">
         <template v-if="title === undefined">{{ category.name }}</template>
