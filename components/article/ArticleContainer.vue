@@ -31,6 +31,7 @@
       v-if="same_category_pages.length > 2"
       :pages="same_category_pages"
       :title="props.page.category.more_text"
+      :link="{ text: 'See All', href: props.page.category.path }"
     ></ArticleSuggestedPages>
 
     <!-- Featured pages -->
@@ -39,6 +40,7 @@
       v-if="distinct_featured_pages.length > 2"
       :pages="distinct_featured_pages"
       title="Featured Projects"
+      :link="{ text: 'See All', href: '/' }"
     ></ArticleSuggestedPages>
   </div>
 </template>
