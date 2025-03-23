@@ -145,6 +145,18 @@ public static void CreateArena(Level level)
             
             // ...`;
 
+const portfolio = `import type { Category } from "~/types/category";
+
+export const categories: Record<string, Category> = {
+  ios_development: {
+    name: "iOS Development",
+    description:
+      "A collection of iOS apps I've developed, including two published apps (WordOwl and Domingo) and a number of work-in-progress projects.",
+    path: "/apps",
+  },
+  
+  // ...`;
+
 export const code_snippets: Record<string, CodeSnippet> = {
   domingo: {
     file_name: "GameView.swift",
@@ -175,5 +187,11 @@ export const code_snippets: Record<string, CodeSnippet> = {
     language: "csharp",
     link: "https://github.com/alasdair-casperd/tanks-arena",
     code: tanks_arena_snippet,
+  },
+  portfolio: {
+    file_name: "category.data.ts",
+    language: "typescript",
+    link: "https://github.com/alasdair-casperd/portfolio",
+    code: portfolio,
   },
 };

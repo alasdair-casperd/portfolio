@@ -21,6 +21,14 @@ export const pages: Record<string, Page> = {
     category: categories.web_development,
     featured: true,
   },
+  portfolio: {
+    name: "This Portfolio",
+    caption: "This portfolio website.",
+    path: "/web-development/this-portfolio",
+    page_preview_image: "/page-previews/portfolio-page-preview.png",
+    tags: [tags.typescript, tags.vue, tags.tailwind, tags.nuxt],
+    category: categories.web_development,
+  },
   the_illusionist: {
     name: "The Illusionist – Companion Sites",
     caption: "Websites built to support an envelope escape room",
