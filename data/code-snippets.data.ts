@@ -157,6 +157,41 @@ export const categories: Record<string, Category> = {
   
   // ...`;
 
+const bookmarks_extension = `import * as vscode from "vscode";
+import { Bookmark } from "./Bookmark";
+import { BookmarkType } from "./BookmarkType";
+
+export class BookmarkProvider implements vscode.TreeDataProvider<Bookmark>, vscode.TreeDragAndDropController<Bookmark>
+{
+  constructor(private context: vscode.ExtensionContext) {
+    this.loadBookmarks();
+  }
+
+  /**
+   * The current list of bookmarks.
+   */
+  private bookmarks: Bookmark[] = [];
+
+  /**
+   * Get the tree item for a given element.
+   * @param element
+   * @returns
+   */
+  getTreeItem = (element: Bookmark): vscode.TreeItem => element;
+
+  /**
+   * Get the children of an element in the tree. Non-empty for the root element only.
+   * @param element
+   * @returns
+   */
+  getChildren = async (element?: Bookmark): Promise<Bookmark[]> => {
+    return element ? [] : this.bookmarks;
+  };
+
+  //...
+}
+`;
+
 export const code_snippets: Record<string, CodeSnippet> = {
   domingo: {
     file_name: "GameView.swift",
@@ -193,5 +228,11 @@ export const code_snippets: Record<string, CodeSnippet> = {
     language: "typescript",
     link: "https://github.com/alasdair-casperd/portfolio",
     code: portfolio,
+  },
+  bookmarks_extension: {
+    file_name: "BookmarkProvider.ts",
+    language: "typescript",
+    link: "https://github.com/alasdair-casperd/file-bookmarks",
+    code: bookmarks_extension,
   },
 };

@@ -143,6 +143,15 @@ export const pages: Record<string, Page> = {
     tags: [tags.html, tags.css],
     category: categories.web_design,
   },
+  bookmarks_extension: {
+    name: "VS Code Bookmarks Extension",
+    caption: "VS Code extension for bookmarking files",
+    path: "/other-projects/bookmarks-extension",
+    page_preview_image: "/page-previews/bookmarks-extension-page-preview.png",
+    tags: [tags.typescript, tags.vscode],
+    category: categories.other,
+    featured: true,
+  },
 };
 
 export const featured_pages = Object.values(pages).filter(

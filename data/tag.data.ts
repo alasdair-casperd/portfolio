@@ -91,4 +91,11 @@ export const tags: Record<string, Tag> = {
     icon: "tabler:file-type-css",
     colour: "yellow",
   },
+
+  vscode: {
+    name: "VS Code API",
+    tag_text: "VS Code API",
+    icon: "tabler:brand-vscode",
+    colour: "blue",
+  },
 };

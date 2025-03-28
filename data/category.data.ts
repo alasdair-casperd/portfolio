@@ -31,4 +31,12 @@ export const categories: Record<string, Category> = {
     path: "/games-development",
     more_text: "Other Games Projects",
   },
+
+  other: {
+    name: "Other",
+    description:
+      "Additional projects that don't fit into the other categories.",
+    path: "/other-projects",
+    more_text: "Related Projects",
+  },
 };
